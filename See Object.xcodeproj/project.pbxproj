@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		647971FC1F6A3021009514CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647971FB1F6A3021009514CF /* AppDelegate.swift */; };
-		647971FE1F6A3021009514CF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647971FD1F6A3021009514CF /* ViewController.swift */; };
+		647971FE1F6A3021009514CF /* CameraVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647971FD1F6A3021009514CF /* CameraVC.swift */; };
 		647972011F6A3021009514CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 647971FF1F6A3021009514CF /* Main.storyboard */; };
 		647972031F6A3021009514CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 647972021F6A3021009514CF /* Assets.xcassets */; };
 		647972061F6A3021009514CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 647972041F6A3021009514CF /* LaunchScreen.storyboard */; };
+		647972101F6A588E009514CF /* Inceptionv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 6479720F1F6A588A009514CF /* Inceptionv3.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		647971F81F6A3021009514CF /* See Object.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "See Object.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		647971FB1F6A3021009514CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		647971FD1F6A3021009514CF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		647971FD1F6A3021009514CF /* CameraVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraVC.swift; sourceTree = "<group>"; };
 		647972001F6A3021009514CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		647972021F6A3021009514CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		647972051F6A3021009514CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		647972071F6A3021009514CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6479720F1F6A588A009514CF /* Inceptionv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Inceptionv3.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,31 @@
 		647971FA1F6A3021009514CF /* See Object */ = {
 			isa = PBXGroup;
 			children = (
+				6479720E1F6A31D5009514CF /* Resource */,
+				6479720D1F6A318E009514CF /* Controller */,
 				647971FB1F6A3021009514CF /* AppDelegate.swift */,
-				647971FD1F6A3021009514CF /* ViewController.swift */,
 				647971FF1F6A3021009514CF /* Main.storyboard */,
 				647972021F6A3021009514CF /* Assets.xcassets */,
 				647972041F6A3021009514CF /* LaunchScreen.storyboard */,
 				647972071F6A3021009514CF /* Info.plist */,
 			);
 			path = "See Object";
+			sourceTree = "<group>";
+		};
+		6479720D1F6A318E009514CF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				647971FD1F6A3021009514CF /* CameraVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		6479720E1F6A31D5009514CF /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				6479720F1F6A588A009514CF /* Inceptionv3.mlmodel */,
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,7 +155,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				647971FE1F6A3021009514CF /* ViewController.swift in Sources */,
+				647971FE1F6A3021009514CF /* CameraVC.swift in Sources */,
+				647972101F6A588E009514CF /* Inceptionv3.mlmodel in Sources */,
 				647971FC1F6A3021009514CF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,9 +295,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 938M7XW9DC;
 				INFOPLIST_FILE = "See Object/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "aure..See-Object";
+				PRODUCT_BUNDLE_IDENTIFIER = "aure.SeeObjectaure.See-Object";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -289,9 +310,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 938M7XW9DC;
 				INFOPLIST_FILE = "See Object/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "aure..See-Object";
+				PRODUCT_BUNDLE_IDENTIFIER = "aure.SeeObjectaure.See-Object";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
