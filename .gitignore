@@ -1,3 +1,4 @@
+*.mlmodel
 .DS_Store
 build/
 *.pbxuser
@@ -13,7 +14,7 @@ build/
 xcuserdata
 profile
 *.moved-aside
-*.mlmodel
+
 DerivedData
 .idea/
 # Pods - for those of you who use CocoaPods
