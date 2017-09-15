@@ -15,6 +15,7 @@
 		647972101F6A588E009514CF /* Inceptionv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 6479720F1F6A588A009514CF /* Inceptionv3.mlmodel */; };
 		647972121F6A612A009514CF /* FrameExtractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647972111F6A612A009514CF /* FrameExtractor.swift */; };
 		647972141F6A7CCB009514CF /* ArdetectVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647972131F6A7CCB009514CF /* ArdetectVC.swift */; };
+		647972191F6B8870009514CF /* BubbleText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647972181F6B8870009514CF /* BubbleText.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		6479720F1F6A588A009514CF /* Inceptionv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Inceptionv3.mlmodel; sourceTree = "<group>"; };
 		647972111F6A612A009514CF /* FrameExtractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameExtractor.swift; sourceTree = "<group>"; };
 		647972131F6A7CCB009514CF /* ArdetectVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArdetectVC.swift; sourceTree = "<group>"; };
+		647972181F6B8870009514CF /* BubbleText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleText.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 		647971FA1F6A3021009514CF /* See Object */ = {
 			isa = PBXGroup;
 			children = (
+				647972171F6B885E009514CF /* Model */,
 				6479720E1F6A31D5009514CF /* Resource */,
 				6479720D1F6A318E009514CF /* Controller */,
 				647971FB1F6A3021009514CF /* AppDelegate.swift */,
@@ -87,6 +90,14 @@
 				6479720F1F6A588A009514CF /* Inceptionv3.mlmodel */,
 			);
 			path = Resource;
+			sourceTree = "<group>";
+		};
+		647972171F6B885E009514CF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				647972181F6B8870009514CF /* BubbleText.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,6 +174,7 @@
 			files = (
 				647971FE1F6A3021009514CF /* CameraVC.swift in Sources */,
 				647972101F6A588E009514CF /* Inceptionv3.mlmodel in Sources */,
+				647972191F6B8870009514CF /* BubbleText.swift in Sources */,
 				647972121F6A612A009514CF /* FrameExtractor.swift in Sources */,
 				647971FC1F6A3021009514CF /* AppDelegate.swift in Sources */,
 				647972141F6A7CCB009514CF /* ArdetectVC.swift in Sources */,
